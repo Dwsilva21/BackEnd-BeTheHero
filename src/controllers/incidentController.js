@@ -10,7 +10,7 @@ async create( request, response) {
     console.log(title);
     return response.json( { evento: 'incidente' , parametro:  title, id } );
 },
- 
+  
 async getAll( request, response ) {
   
    const { page = 1 } = request.query;  
